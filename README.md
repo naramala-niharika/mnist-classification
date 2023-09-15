@@ -27,8 +27,9 @@ Compile and fit the model and then predict
 
 Write your own steps
 
-## PROGRAM
-``
+## PROGRAM:
+
+
 import numpy as np
 from tensorflow import keras
 from tensorflow.keras import layers
@@ -103,9 +104,9 @@ x_single_prediction = np.argmax(
     model.predict(img_28_gray_inverted_scaled.reshape(1,28,28,1)),
      axis=1)
 print(x_single_prediction)
-``
-## OUTPUT
 
+
+## OUTPUT:
 ### Training Loss, Validation Loss Vs Iteration Plot:
 
 <img width="208" alt="e3 1" src="https://github.com/naramala-niharika/mnist-classification/assets/94165377/52c3ed11-b0d8-4524-bdc4-cf1b0eeefe66">
